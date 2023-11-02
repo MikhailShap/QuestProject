@@ -19,10 +19,17 @@ public class Init extends HttpServlet {
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         String name = req.getParameter("name");
         HttpSession session = req.getSession(true);
-        session.setAttribute("Level",Levels.MAIN_LEVEL);
-        session.setAttribute("name",name);
+        session.setAttribute("Level", Levels.MAIN_LEVEL);
+        session.setAttribute("name", name);
         RequestDispatcher requestDispatcher = req.getRequestDispatcher("WEB-INF/Basic.jsp");
-        requestDispatcher.forward(req,resp);
+        if (session.getAttribute("countGame") == null) {
+            session.setAttribute("countGame", 1);
+            requestDispatcher.forward(req, resp);
+        } else {
+            int countGame = (int) session.getAttribute("countGame");
+            session.setAttribute("countGame", countGame + 1);
 
+            requestDispatcher.forward(req, resp);
+        }
     }
 }

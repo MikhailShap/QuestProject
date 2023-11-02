@@ -7,6 +7,7 @@ import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 import jakarta.servlet.http.HttpSession;
+import org.apache.commons.lang3.StringUtils;
 
 import java.io.IOException;
 import java.util.Enumeration;
@@ -22,6 +23,9 @@ public class Restart extends HttpServlet {
         //Удаляем все атрибуты TODO:Додумать
         while (attributeNames.hasMoreElements()) {
             String attributeName = attributeNames.nextElement();
+            if(StringUtils.equals(attributeName,"countGame")){
+                continue;
+            }
             session.removeAttribute(attributeName);
         }
         RequestDispatcher requestDispatcher = req.getRequestDispatcher("index.jsp");

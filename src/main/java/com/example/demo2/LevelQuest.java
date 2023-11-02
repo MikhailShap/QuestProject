@@ -4,8 +4,11 @@ import org.apache.commons.lang3.StringUtils;
 
 public class LevelQuest {
     private final String question;
+
     private LevelQuest nextLevelQuestIfAnswerOne;
     private LevelQuest nextLevelQuestIfAnswerTwo;
+
+    private  boolean isDefeat;
 
     private final String answerOne;
     private final String answerTwo;
@@ -14,7 +17,15 @@ public class LevelQuest {
         this.question = quest;
         this.answerOne = answerOne;
         this.answerTwo = answerTwo;
+
     }
+    public void setDefeat() {
+        isDefeat = true;
+    }
+    public boolean isDefeat() {
+        return isDefeat;
+    }
+
 
     public String getQuestion() {
         return question;
