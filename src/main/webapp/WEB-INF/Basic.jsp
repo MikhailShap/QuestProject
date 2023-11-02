@@ -1,4 +1,6 @@
-<%--
+
+<%@ page import="com.example.demo2.LevelQuest" %>
+<%@ page import="org.apache.commons.lang3.StringUtils" %><%--
   Created by IntelliJ IDEA.
   User: maxim
   Date: 31.10.2023
@@ -6,9 +8,10 @@
   To change this template use File | Settings | File Templates.
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
-<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
+
 <html>
 <head>
+    <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
     <meta charset="UTF-8">
     <title>Квест</title>
     <style>
@@ -53,13 +56,23 @@
     </style>
 </head>
 <body>
+<jsp:useBean id="Level" scope="session" type="com.example.demo2.LevelQuest"/>
 <div class="container">
-    <p> <%</p>
-    <form action="someAction" method="post">
-        <input type="radio" name="choice" value="refuse"> Да<br>
-        <input type="radio" name="choice" value="accept"> Нет<br>
+
+    <p>${Level.question}</p>
+
+<c:if test="${not empty Level.answerOne}">
+    <form action="${pageContext.request.contextPath}/quest" method="post">
+        <input type="radio" name="choice" value="${Level.answerOne}"> ${Level.answerOne}<br>
+        <input type="radio" name="choice" value="${Level.answerTwo}"> ${Level.answerTwo}<br>
         <button type="submit">Ответить</button>
     </form>
+</c:if>
+<c:if test="${ empty Level.answerOne}">
+    <form action="${pageContext.request.contextPath}/restart" method="get">
+        <button type="submit">Начать заново</button>
+    </form>
+</c:if>
     <div class="stats">
         IP address: <%=request.getRemoteAddr()%><br>
         Имя в игре: <%=session.getAttribute("name")%><br>

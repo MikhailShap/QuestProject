@@ -16,15 +16,18 @@ public class Questions extends HttpServlet {
 
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        String name = req.getParameter("name");
         HttpSession session = req.getSession();
-        String name1 = (String) session.getAttribute("name");
-        if(StringUtils.isEmpty(name1)){
-            session.setAttribute("name", name);
-        }
-        System.out.println(name1);
-        RequestDispatcher requestDispatcher = req.getRequestDispatcher("/index.jsp");
-        requestDispatcher.forward(req, resp);
-
+        String choice = req.getParameter("choice");
+        System.out.println(choice);
+        LevelQuest level = (LevelQuest) session.getAttribute("Level");
+        System.out.println(level);
+        LevelQuest nextLevel = level.getNextLevel(choice);
+        session.setAttribute("Level",nextLevel);
+        LevelQuest level2 = (LevelQuest) session.getAttribute("Level");
+        System.out.println(level2);
+        RequestDispatcher requestDispatcher = req.getRequestDispatcher("WEB-INF/Basic.jsp");
+        requestDispatcher.forward(req,resp);
     }
+    //TODO: сделать чтобы при ответе без выбора варианта ничего не происходило
+
 }

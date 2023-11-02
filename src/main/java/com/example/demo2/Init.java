@@ -17,14 +17,11 @@ public class Init extends HttpServlet {
 
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        String nameParam = req.getParameter("name");
-        HttpSession session = req.getSession();
-        String nameSessionAttr = (String)session.getAttribute("name");
-        if(StringUtils.isEmpty(nameSessionAttr)){
-            session.setAttribute("name",nameParam);
-        }
-        System.out.println(session.getAttribute("name"));
-        RequestDispatcher requestDispatcher = req.getRequestDispatcher("index.jsp");
+        String name = req.getParameter("name");
+        HttpSession session = req.getSession(true);
+        session.setAttribute("Level",Levels.MAIN_LEVEL);
+        session.setAttribute("name",name);
+        RequestDispatcher requestDispatcher = req.getRequestDispatcher("WEB-INF/Basic.jsp");
         requestDispatcher.forward(req,resp);
 
     }

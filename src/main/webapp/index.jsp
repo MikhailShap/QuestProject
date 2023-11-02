@@ -59,6 +59,7 @@
     </style>
 </head>
 <body>
+
 <div class="container">
     <h1>Квест</h1>
     <p>Здесь будет какой-то текст</p>
