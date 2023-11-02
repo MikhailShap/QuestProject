@@ -30,30 +30,35 @@
             border-radius: 20px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
             width: 800px;
-        }
+            max-width: 800px;
+            min-width: 800px;
+            max-height: 500px;
+            min-height: 500px;
+            }
 
-        button {
-            background-color: #4CAF50;
-            color: white;
-            border: none;
-            padding: 30px 40px;
-            border-radius: 20px;
-            cursor: pointer;
-            width: 100%;
-            max-width: 200px;
-            margin-top: 40px;
-        }
+            button {
+                background-color: #4CAF50;
+                color: white;
+                border: none;
+                padding: 30px 40px;
+                border-radius: 20px;
+                cursor: pointer;
+                width: 100%;
+                max-width: 200px;
+                margin-top: 40px;
+            }
 
-        input[type="radio"] {
-            margin: 20px 0;
-        }
+            input[type="radio"] {
+                margin: 20px 0;
+            }
 
-        .stats {
-            font-size: 28px;
-            color: red;
-            margin-top: 40px;
-        }
-    </style>
+            .stats {
+                font-size: 28px;
+                color: red;
+                margin-top: 40px;
+            }
+
+</style>
 </head>
 <body>
 <jsp:useBean id="Level" scope="session" type="com.example.demo2.LevelQuest"/>
@@ -63,8 +68,14 @@
 
 <c:if test="${not empty Level.answerOne}">
     <form action="${pageContext.request.contextPath}/quest" method="post">
-        <input type="radio" name="choice" value="${Level.answerOne}"> ${Level.answerOne}<br>
-        <input type="radio" name="choice" value="${Level.answerTwo}"> ${Level.answerTwo}<br>
+        <label>
+            <input type="radio" name="choice" value="${Level.answerOne}">
+                ${Level.answerOne}
+        </label><br>
+        <label>
+            <input type="radio" name="choice" value="${Level.answerTwo}">
+                ${Level.answerTwo}
+        </label><br>
         <button type="submit">Ответить</button>
     </form>
 </c:if>

@@ -23,8 +23,10 @@ public class LevelQuest {
     public LevelQuest getNextLevel(String answer) {
         if (StringUtils.equals(answer, answerOne)) {
             return nextLevelQuestIfAnswerOne;
-        } else {
+        } else if (StringUtils.equals(answer,answerTwo)) {
             return nextLevelQuestIfAnswerTwo;
+        }else {
+            return null;
         }
     }
 
