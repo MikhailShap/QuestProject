@@ -90,10 +90,10 @@ img {
         <c:choose>
 
             <c:when test="${Level.defeat}">
-                <p style="color: red;font-size: 30px">Ты проиграл</p>
+                <p style="color: red;font-size: 30px;margin: 0">Ты проиграл</p>
             </c:when>
             <c:otherwise>
-                <p style="color: green;font-size: 30px">Ты победил</p>
+                <p style="color: green;font-size: 30px;margin: 0">Ты победил</p>
             </c:otherwise>
         </c:choose>
 
@@ -112,15 +112,18 @@ img {
 
                 <button class="submitButton" type="submit">Ответить</button>
             </form>
-            <img src="../images/Im1.png"/>
+            <img src="${Level.pathToImage}"/>
         </div>
     </c:if>
 
 
     <c:if test="${ empty Level.answerOne}">
+        <div class="container__content">
         <form action="${pageContext.request.contextPath}/restart" method="get">
             <button class="restartButton" type="submit">Начать заново</button>
         </form>
+            <img src="${Level.pathToImage}"/>
+        </div>
     </c:if>
 
     <div class="stats">

@@ -13,11 +13,12 @@ public class LevelQuest {
     private final String answerOne;
     private final String answerTwo;
 
+    private  String pathToImage;
+
     public LevelQuest(String quest, String answerOne, String answerTwo) {
         this.question = quest;
         this.answerOne = answerOne;
         this.answerTwo = answerTwo;
-
     }
     public void setDefeat() {
         isDefeat = true;
@@ -45,6 +46,9 @@ public class LevelQuest {
         nextLevelQuestIfAnswerOne = levelQuestOne;
         nextLevelQuestIfAnswerTwo = levelQuestTwo;
     }
+    public void addImageForLevel(String pathToImage){
+        this.pathToImage = pathToImage;
+    }
 
 
 
@@ -54,5 +58,9 @@ public class LevelQuest {
 
     public String getAnswerTwo() {
         return answerTwo;
+    }
+
+    public String getPathToImage() {
+        return pathToImage;
     }
 }

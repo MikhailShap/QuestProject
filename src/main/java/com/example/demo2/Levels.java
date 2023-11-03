@@ -100,5 +100,47 @@ public class Levels {
         l1_2_2_1_1_End.setDefeat();
         l2_1_1_1_1_End.setDefeat();
         l2_1_2_1_1_End.setDefeat();
+
+        //add Image "../images/.png"
+        MAIN_LEVEL.addImageForLevel("../images/A.png");
+        //L1
+        l1.addImageForLevel("../images/AA.png");
+        l2.addImageForLevel("../images/BA.png");
+        //L2
+        l1_1.addImageForLevel("../images/AB.png");
+        l1_2.addImageForLevel("../images/AA.png");
+        l2_1.addImageForLevel("../images/AA.png");
+        l2_2.addImageForLevel("../images/AJ.png");
+        //L3
+        l1_1_1.addImageForLevel("../images/AY.png");
+        l1_1_2_End.addImageForLevel("../images/AC.png");
+        l1_2_1.addImageForLevel("../images/AB.png");
+        l1_2_2.addImageForLevel("../images/AB.png");
+        l2_1_1.addImageForLevel("../images/AB.png");
+        l2_1_2.addImageForLevel("../images/AB.png");
+        l2_2_1.addImageForLevel("../images/AB.png");
+        l2_2_2_End.addImageForLevel("../images/AZ.png");
+        //l4
+        l1_1_1_1_End.addImageForLevel("../images/AN.png");
+        l1_1_1_2_End.addImageForLevel("../images/AX.png");
+        l1_2_1_1.addImageForLevel("../images/AY.png");
+        l1_2_1_2_End.addImageForLevel("../images/AM.png");
+        l1_2_2_1.addImageForLevel("../images/AY.png");
+        l1_2_2_2_End.addImageForLevel("../images/AP.png");
+        l2_1_1_1.addImageForLevel("../images/AY.png");
+        l2_1_1_2_End.addImageForLevel("../images/AS.png");
+        l2_1_2_1.addImageForLevel("../images/AY.png");
+        l2_1_2_2_End.addImageForLevel("../images/AV.png");
+        l2_2_1_1_End.addImageForLevel("../images/AY.png");
+        l2_2_1_2_End.addImageForLevel("../images/AR.png");
+        //l5
+        l1_2_1_1_1_End.addImageForLevel("../images/AH.png");
+        l1_2_1_1_2_End.addImageForLevel("../images/AX.png");
+        l1_2_2_1_1_End.addImageForLevel("../images/AK.png");
+        l1_2_2_1_2_End.addImageForLevel("../images/AX.png");
+        l2_1_1_1_1_End.addImageForLevel("../images/AE.png");
+        l2_1_1_1_2_End.addImageForLevel("../images/AX.png");
+        l2_1_2_1_1_End.addImageForLevel("../images/AF.png");
+        l2_1_2_1_2_End.addImageForLevel("../images/AX.png");
     }
 }
