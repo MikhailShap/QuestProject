@@ -1,5 +1,6 @@
-package com.example.demo2;
+package com.javarush.quest.shaposhnikov.servlets;
 
+import com.javarush.quest.shaposhnikov.Levels.LevelQuest;
 import jakarta.servlet.RequestDispatcher;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.annotation.WebServlet;
@@ -12,7 +13,7 @@ import org.apache.commons.lang3.StringUtils;
 import java.io.IOException;
 
 @WebServlet(name = "Questions", value = "/quest")
-public class Questions extends HttpServlet {
+public class LevelQuestServlet extends HttpServlet {
 
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {

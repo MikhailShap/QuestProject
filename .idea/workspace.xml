@@ -10,9 +10,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5a4e7ee6-5b34-4e30-ade7-30f3d90974ef" name="Changes" comment="Act 4&#10;до внедрения всех фото">
+      <change afterPath="$PROJECT_DIR$/.idea/webContexts.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo2/LevelQuest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo2/LevelQuest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo2/Levels.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo2/Levels.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo2/HelloServlet.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo2/Init.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/javarush/quest/shaposhnikov/servlets/InitServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo2/LevelQuest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/javarush/quest/shaposhnikov/Levels/LevelQuest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo2/Levels.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/javarush/quest/shaposhnikov/Levels/LevelsQuestLoader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo2/Questions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/javarush/quest/shaposhnikov/servlets/LevelQuestServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo2/Restart.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/javarush/quest/shaposhnikov/servlets/RestartServlet.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/Basic.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/Basic.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -71,6 +76,19 @@
     </key>
   </component>
   <component name="RunManager">
+    <configuration default="true" type="JetRunConfigurationType">
+      <module name="QuestProject" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <module name="QuestProject" />
+      <option name="filePath" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Tomcat 10" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 10" ALTERNATIVE_JRE_ENABLED="false">
       <deployment>
         <artifact name="demo2:war exploded">
@@ -224,17 +242,6 @@
     <MESSAGE value="Act 3&#10;пока так&#10;исправил чтобы при нажатии без выбора ничего не происходило" />
     <MESSAGE value="Act 4&#10;до внедрения всех фото" />
     <option name="LAST_COMMIT_MESSAGE" value="Act 4&#10;до внедрения всех фото" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/example/demo2/Init.java</url>
-          <line>24</line>
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

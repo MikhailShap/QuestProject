@@ -1,4 +1,4 @@
-package com.example.demo2;
+package com.javarush.quest.shaposhnikov.Levels;
 
 import org.apache.commons.lang3.StringUtils;
 

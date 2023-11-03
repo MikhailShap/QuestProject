@@ -1,4 +1,4 @@
-<%@ page import="com.example.demo2.LevelQuest" %>
+<%@ page import="com.javarush.quest.shaposhnikov.Levels.LevelQuest" %>
 <%@ page import="org.apache.commons.lang3.StringUtils" %><%--
   Created by IntelliJ IDEA.
   User: maxim
@@ -83,7 +83,7 @@ img {
     </style>
 </head>
 <body>
-<jsp:useBean id="Level" scope="session" type="com.example.demo2.LevelQuest"/>
+<jsp:useBean id="Level" scope="session" type="com.javarush.quest.shaposhnikov.LevelQuest"/>
 <div class="container">
 
     <c:if test="${ empty Level.answerOne}">

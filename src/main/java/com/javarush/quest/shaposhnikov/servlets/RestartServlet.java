@@ -1,4 +1,4 @@
-package com.example.demo2;
+package com.javarush.quest.shaposhnikov.servlets;
 
 import jakarta.servlet.RequestDispatcher;
 import jakarta.servlet.ServletException;
@@ -13,7 +13,7 @@ import java.io.IOException;
 import java.util.Enumeration;
 
 @WebServlet(name = "Restart", value = "/restart")
-public class Restart extends HttpServlet {
+public class RestartServlet extends HttpServlet {
 
 
     @Override
