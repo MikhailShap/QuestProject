@@ -21,6 +21,7 @@ public class InitServlet extends HttpServlet {
         HttpSession session = req.getSession(true);
         session.setAttribute("Level", LevelsQuestLoader.MAIN_LEVEL);
         session.setAttribute("name", name);
+
         RequestDispatcher requestDispatcher = req.getRequestDispatcher("WEB-INF/Basic.jsp");
         if (session.getAttribute("countGame") == null) {
             session.setAttribute("countGame", 1);

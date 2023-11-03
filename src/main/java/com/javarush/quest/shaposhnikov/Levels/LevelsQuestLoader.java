@@ -1,5 +1,7 @@
 package com.javarush.quest.shaposhnikov.Levels;
 
+import java.util.Formatter;
+
 public class LevelsQuestLoader {
     public final static LevelQuest MAIN_LEVEL;
 
@@ -45,7 +47,8 @@ public class LevelsQuestLoader {
         LevelQuest l2_1_2_1_1_End = new LevelQuest("Старуха кивнула головой и проклятие сделало вас невидимым. Но теперь вы служите ей в качестве шпиона, беспрестанно следя за теми, кто пытается подойти к её дому или узнать её тайны.");
         LevelQuest l2_1_2_1_2_End = new LevelQuest("Старуха рассмеялась и похвалила Вашу смекалку. Теперь Вы свободны.");
 
-        //binding TODO:Убрать нулы, добавить другой конструктор, сделать структуру папок, сделать рефакторинг, сделать тесты
+        Formatter formatter = new Formatter();
+        //binding TODO:сделать тесты
         MAIN_LEVEL.addNextLevels(l1, l2);
         //L1
         l1.addNextLevels(l1_1, l1_2);

@@ -10,80 +10,13 @@
 
 <html>
 <head>
+    <link rel="stylesheet" href="../resources/Basic.css">
     <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
     <meta charset="UTF-8">
     <title>Квест</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f5f5f5;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            font-size: ;
-        }
-
-        .container {
-            background-color: #ffffff;
-            padding: 20px 50px;
-            border-radius: 20px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            width: 830px;
-            max-width: 800px;
-            min-width: 800px;
-            max-height: 530px;
-            min-height: 530px;
-            display: flex;
-            flex-direction: column;
-        }
-        label{
-            font-size: 18px;
-        }
-
-        button {
-            background-color: #4CAF50;
-            font-size: 20px;
-            color: white;
-            border: none;
-            padding: 20px 30px;
-            border-radius: 20px;
-            cursor: pointer;
-            width: 100%;
-            max-width: 200px;
-            margin-top: 40px;
-        }
-        .restartButton{
-           max-width: 250px;
-            padding: 20px 30px;
-        }
-
-        input[type="radio"] {
-            margin: 20px 0;
-        }
-
-        .stats {
-            font-size: 23px;
-            color: #235095;
-            margin-top: auto;
-        }
-
-.container__content {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    margin-top: auto;
-}
-img {
-    width: 100%;
-    max-width: 300px;
-}
-    </style>
 </head>
 <body>
-<jsp:useBean id="Level" scope="session" type="com.javarush.quest.shaposhnikov.LevelQuest"/>
+<jsp:useBean id="Level" scope="session" type="com.javarush.quest.shaposhnikov.Levels.LevelQuest"/>
 <div class="container">
 
     <c:if test="${ empty Level.answerOne}">

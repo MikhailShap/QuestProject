@@ -2,17 +2,23 @@
 <project version="4">
   <component name="ArtifactsWorkspaceSettings">
     <artifacts-to-build>
-      <artifact name="demo2:war exploded" />
+      <artifact name="QuestProject:war exploded" />
     </artifacts-to-build>
   </component>
   <component name="AutoImportSettings">
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5a4e7ee6-5b34-4e30-ade7-30f3d90974ef" name="Changes" comment="Act 6&#10;исправил структуру">
+    <list default="true" id="5a4e7ee6-5b34-4e30-ade7-30f3d90974ef" name="Changes" comment="Act 7&#10;убрал лишние null в LevelsQuestLoader&#10;добавил для этого еще конструктор">
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/Basic.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/index.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/javarush/quest/shaposhnikov/Levels/LevelQuest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/javarush/quest/shaposhnikov/Levels/LevelQuest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/javarush/quest/shaposhnikov/Levels/LevelsQuestLoader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/javarush/quest/shaposhnikov/Levels/LevelsQuestLoader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/javarush/quest/shaposhnikov/servlets/InitServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/javarush/quest/shaposhnikov/servlets/InitServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/javarush/quest/shaposhnikov/servlets/RestartServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/javarush/quest/shaposhnikov/servlets/RestartServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/Basic.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/Basic.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -84,8 +90,9 @@
       </method>
     </configuration>
     <configuration name="Tomcat 10" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 10" ALTERNATIVE_JRE_ENABLED="false">
+      <option name="UPDATING_POLICY" value="restart-server" />
       <deployment>
-        <artifact name="demo2:war exploded">
+        <artifact name="QuestProject:war exploded">
           <settings>
             <option name="CONTEXT_PATH" value="/" />
           </settings>
@@ -165,7 +172,7 @@
       <method v="2">
         <option name="Make" enabled="true" />
         <option name="BuildArtifacts" enabled="true">
-          <artifact name="demo2:war exploded" />
+          <artifact name="QuestProject:war exploded" />
         </option>
       </method>
     </configuration>
@@ -221,7 +228,15 @@
       <option name="project" value="LOCAL" />
       <updated>1699032099099</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Act 7&#10;убрал лишние null в LevelsQuestLoader&#10;добавил для этого еще конструктор">
+      <option name="closed" value="true" />
+      <created>1699045681866</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1699045681866</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -244,7 +259,8 @@
     <MESSAGE value="Act 3&#10;пока так&#10;исправил чтобы при нажатии без выбора ничего не происходило" />
     <MESSAGE value="Act 4&#10;до внедрения всех фото" />
     <MESSAGE value="Act 6&#10;исправил структуру" />
-    <option name="LAST_COMMIT_MESSAGE" value="Act 6&#10;исправил структуру" />
+    <MESSAGE value="Act 7&#10;убрал лишние null в LevelsQuestLoader&#10;добавил для этого еще конструктор" />
+    <option name="LAST_COMMIT_MESSAGE" value="Act 7&#10;убрал лишние null в LevelsQuestLoader&#10;добавил для этого еще конструктор" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

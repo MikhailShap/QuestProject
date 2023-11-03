@@ -19,8 +19,8 @@ public class RestartServlet extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         HttpSession session = req.getSession();
+
         Enumeration<String> attributeNames = session.getAttributeNames();
-        //Удаляем все атрибуты TODO:Додумать
         while (attributeNames.hasMoreElements()) {
             String attributeName = attributeNames.nextElement();
             if(StringUtils.equals(attributeName,"countGame")){
