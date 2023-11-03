@@ -8,21 +8,29 @@ public class LevelQuest {
     private LevelQuest nextLevelQuestIfAnswerOne;
     private LevelQuest nextLevelQuestIfAnswerTwo;
 
-    private  boolean isDefeat;
+    private boolean isDefeat;
 
     private final String answerOne;
     private final String answerTwo;
 
-    private  String pathToImage;
+    private String pathToImage;
 
     public LevelQuest(String quest, String answerOne, String answerTwo) {
         this.question = quest;
         this.answerOne = answerOne;
         this.answerTwo = answerTwo;
     }
+
+    public LevelQuest(String quest) {
+        this.question = quest;
+        this.answerOne = null;
+        this.answerTwo = null;
+    }
+
     public void setDefeat() {
         isDefeat = true;
     }
+
     public boolean isDefeat() {
         return isDefeat;
     }
@@ -35,21 +43,21 @@ public class LevelQuest {
     public LevelQuest getNextLevel(String answer) {
         if (StringUtils.equals(answer, answerOne)) {
             return nextLevelQuestIfAnswerOne;
-        } else if (StringUtils.equals(answer,answerTwo)) {
+        } else if (StringUtils.equals(answer, answerTwo)) {
             return nextLevelQuestIfAnswerTwo;
-        }else {
+        } else {
             return null;
         }
     }
 
-    public void addNextLevels(LevelQuest levelQuestOne,LevelQuest levelQuestTwo) {
+    public void addNextLevels(LevelQuest levelQuestOne, LevelQuest levelQuestTwo) {
         nextLevelQuestIfAnswerOne = levelQuestOne;
         nextLevelQuestIfAnswerTwo = levelQuestTwo;
     }
-    public void addImageForLevel(String pathToImage){
+
+    public void addImageForLevel(String pathToImage) {
         this.pathToImage = pathToImage;
     }
-
 
 
     public String getAnswerOne() {

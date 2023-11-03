@@ -9,16 +9,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5a4e7ee6-5b34-4e30-ade7-30f3d90974ef" name="Changes" comment="Act 4&#10;до внедрения всех фото">
-      <change afterPath="$PROJECT_DIR$/.idea/webContexts.xml" afterDir="false" />
+    <list default="true" id="5a4e7ee6-5b34-4e30-ade7-30f3d90974ef" name="Changes" comment="Act 6&#10;исправил структуру">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo2/HelloServlet.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo2/Init.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/javarush/quest/shaposhnikov/servlets/InitServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo2/LevelQuest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/javarush/quest/shaposhnikov/Levels/LevelQuest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo2/Levels.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/javarush/quest/shaposhnikov/Levels/LevelsQuestLoader.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo2/Questions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/javarush/quest/shaposhnikov/servlets/LevelQuestServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo2/Restart.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/javarush/quest/shaposhnikov/servlets/RestartServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/Basic.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/Basic.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/javarush/quest/shaposhnikov/Levels/LevelQuest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/javarush/quest/shaposhnikov/Levels/LevelQuest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/javarush/quest/shaposhnikov/Levels/LevelsQuestLoader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/javarush/quest/shaposhnikov/Levels/LevelsQuestLoader.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -219,7 +213,15 @@
       <option name="project" value="LOCAL" />
       <updated>1698968280396</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Act 6&#10;исправил структуру">
+      <option name="closed" value="true" />
+      <created>1699032099099</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1699032099099</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -241,7 +243,8 @@
     <MESSAGE value="Act 2&#10;почти вся основа &#10;переходы&#10;шаг начать заново" />
     <MESSAGE value="Act 3&#10;пока так&#10;исправил чтобы при нажатии без выбора ничего не происходило" />
     <MESSAGE value="Act 4&#10;до внедрения всех фото" />
-    <option name="LAST_COMMIT_MESSAGE" value="Act 4&#10;до внедрения всех фото" />
+    <MESSAGE value="Act 6&#10;исправил структуру" />
+    <option name="LAST_COMMIT_MESSAGE" value="Act 6&#10;исправил структуру" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
