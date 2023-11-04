@@ -9,16 +9,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5a4e7ee6-5b34-4e30-ade7-30f3d90974ef" name="Changes" comment="Act 7&#10;убрал лишние null в LevelsQuestLoader&#10;добавил для этого еще конструктор">
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/Basic.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/index.css" afterDir="false" />
+    <list default="true" id="5a4e7ee6-5b34-4e30-ade7-30f3d90974ef" name="Changes" comment="Act 8&#10;сделал небольшой рефакторинг у классов&#10;положил стиль в отдельные css файлы&#10;исправил ошибку с зависимостью">
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/javarush/quest/shaposhnikov/Levels/LevelQuestTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/javarush/quest/shaposhnikov/servlets/InitServletTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/javarush/quest/shaposhnikov/Levels/LevelsQuestLoader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/javarush/quest/shaposhnikov/Levels/LevelsQuestLoader.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/javarush/quest/shaposhnikov/servlets/InitServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/javarush/quest/shaposhnikov/servlets/InitServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/javarush/quest/shaposhnikov/servlets/RestartServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/javarush/quest/shaposhnikov/servlets/RestartServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/Basic.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/Basic.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,6 +27,7 @@
         <option value="Jsp File" />
         <option value="Servlet" />
         <option value="Class" />
+        <option value="JUnit5 Test Class" />
       </list>
     </option>
   </component>
@@ -53,29 +50,117 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;fileTemplates&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
+    "git-widget-placeholder": "master",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "settings.editor.selected.configurable": "fileTemplates",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\IdeaProjectsUltimate\demo2\src\main\webapp" />
       <recent name="C:\IdeaProjectsUltimate\demo2\src\main\webapp\WEB-INF" />
       <recent name="C:\IdeaProjectsUltimate\demo2\src\main\webapp\images" />
     </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="com.javarush.quest.shaposhnikov.servlets" />
+      <recent name="com.javarush.quest.shaposhnikov.Levels" />
+    </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Tomcat Server.Tomcat 10">
+    <configuration name="InitServletTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="QuestProject" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.javarush.quest.shaposhnikov.servlets.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.javarush.quest.shaposhnikov.servlets" />
+      <option name="MAIN_CLASS_NAME" value="com.javarush.quest.shaposhnikov.servlets.InitServletTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="InitServletTest.correctSetAttributeCountGameInSessionFirst" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="QuestProject" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.javarush.quest.shaposhnikov.servlets.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.javarush.quest.shaposhnikov.servlets" />
+      <option name="MAIN_CLASS_NAME" value="com.javarush.quest.shaposhnikov.servlets.InitServletTest" />
+      <option name="METHOD_NAME" value="correctSetAttributeCountGameInSessionFirst" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="InitServletTest.correctSetAttributeCountGameInSessionSecond" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="QuestProject" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.javarush.quest.shaposhnikov.servlets.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.javarush.quest.shaposhnikov.servlets" />
+      <option name="MAIN_CLASS_NAME" value="com.javarush.quest.shaposhnikov.servlets.InitServletTest" />
+      <option name="METHOD_NAME" value="correctSetAttributeCountGameInSessionSecond" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="InitServletTest.forwardWhenCountGameNotNull" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="QuestProject" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.javarush.quest.shaposhnikov.servlets.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.javarush.quest.shaposhnikov.servlets" />
+      <option name="MAIN_CLASS_NAME" value="com.javarush.quest.shaposhnikov.servlets.InitServletTest" />
+      <option name="METHOD_NAME" value="forwardWhenCountGameNotNull" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="InitServletTest.forwardWhenCountGameNull" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="QuestProject" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.javarush.quest.shaposhnikov.servlets.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.javarush.quest.shaposhnikov.servlets" />
+      <option name="MAIN_CLASS_NAME" value="com.javarush.quest.shaposhnikov.servlets.InitServletTest" />
+      <option name="METHOD_NAME" value="forwardWhenCountGameNull" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration default="true" type="JetRunConfigurationType">
       <module name="QuestProject" />
       <method v="2">
@@ -176,6 +261,23 @@
         </option>
       </method>
     </configuration>
+    <list>
+      <item itemvalue="JUnit.InitServletTest" />
+      <item itemvalue="JUnit.InitServletTest.correctSetAttributeCountGameInSessionFirst" />
+      <item itemvalue="JUnit.InitServletTest.correctSetAttributeCountGameInSessionSecond" />
+      <item itemvalue="JUnit.InitServletTest.forwardWhenCountGameNotNull" />
+      <item itemvalue="JUnit.InitServletTest.forwardWhenCountGameNull" />
+      <item itemvalue="Tomcat Server.Tomcat 10" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.InitServletTest" />
+        <item itemvalue="JUnit.InitServletTest.forwardWhenCountGameNotNull" />
+        <item itemvalue="JUnit.InitServletTest.forwardWhenCountGameNull" />
+        <item itemvalue="JUnit.InitServletTest.correctSetAttributeCountGameInSessionSecond" />
+        <item itemvalue="JUnit.InitServletTest.correctSetAttributeCountGameInSessionFirst" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -236,7 +338,15 @@
       <option name="project" value="LOCAL" />
       <updated>1699045681866</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Act 8&#10;сделал небольшой рефакторинг у классов&#10;положил стиль в отдельные css файлы&#10;исправил ошибку с зависимостью">
+      <option name="closed" value="true" />
+      <created>1699054033048</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1699054033048</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -260,7 +370,8 @@
     <MESSAGE value="Act 4&#10;до внедрения всех фото" />
     <MESSAGE value="Act 6&#10;исправил структуру" />
     <MESSAGE value="Act 7&#10;убрал лишние null в LevelsQuestLoader&#10;добавил для этого еще конструктор" />
-    <option name="LAST_COMMIT_MESSAGE" value="Act 7&#10;убрал лишние null в LevelsQuestLoader&#10;добавил для этого еще конструктор" />
+    <MESSAGE value="Act 8&#10;сделал небольшой рефакторинг у классов&#10;положил стиль в отдельные css файлы&#10;исправил ошибку с зависимостью" />
+    <option name="LAST_COMMIT_MESSAGE" value="Act 8&#10;сделал небольшой рефакторинг у классов&#10;положил стиль в отдельные css файлы&#10;исправил ошибку с зависимостью" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
