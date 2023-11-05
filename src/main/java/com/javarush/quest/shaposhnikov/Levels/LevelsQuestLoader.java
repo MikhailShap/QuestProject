@@ -106,7 +106,7 @@ public class LevelsQuestLoader {
         l2_2_2_End.addImageForLevel("../images/AZ.png");
         //l4
         l1_1_1_1_End.addImageForLevel("../images/AN.png");
-        l1_1_1_2_End.addImageForLevel("../images/AX.png");
+        l1_1_1_2_End.addImageForLevel("../images/Kristinochka.png");
         l1_2_1_1.addImageForLevel("../images/AY.png");
         l1_2_1_2_End.addImageForLevel("../images/AM.png");
         l1_2_2_1.addImageForLevel("../images/AY.png");
@@ -119,12 +119,12 @@ public class LevelsQuestLoader {
         l2_2_1_2_End.addImageForLevel("../images/AR.png");
         //l5
         l1_2_1_1_1_End.addImageForLevel("../images/AH.png");
-        l1_2_1_1_2_End.addImageForLevel("../images/AX.png");
+        l1_2_1_1_2_End.addImageForLevel("../images/Kristinochka.png");
         l1_2_2_1_1_End.addImageForLevel("../images/AK.png");
-        l1_2_2_1_2_End.addImageForLevel("../images/AX.png");
+        l1_2_2_1_2_End.addImageForLevel("../images/Kristinochka.png");
         l2_1_1_1_1_End.addImageForLevel("../images/AE.png");
-        l2_1_1_1_2_End.addImageForLevel("../images/AX.png");
+        l2_1_1_1_2_End.addImageForLevel("../images/Kristinochka.png");
         l2_1_2_1_1_End.addImageForLevel("../images/AF.png");
-        l2_1_2_1_2_End.addImageForLevel("../images/AX.png");
+        l2_1_2_1_2_End.addImageForLevel("../images/Kristinochka.png");
     }
 }
