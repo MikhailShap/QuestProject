@@ -14,12 +14,10 @@ import org.mockito.junit.jupiter.MockitoExtension;
 
 import java.io.IOException;
 import java.util.Arrays;
-import java.util.Collection;
 import java.util.Collections;
 
 import static org.mockito.Mockito.*;
 
-import static org.junit.jupiter.api.Assertions.*;
 
 @ExtendWith(MockitoExtension.class)
 class RestartServletTest {
