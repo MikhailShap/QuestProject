@@ -1,12 +1,11 @@
-<%@ page import="com.javarush.quest.shaposhnikov.Levels.LevelQuest" %>
-<%@ page import="org.apache.commons.lang3.StringUtils" %><%--
+<%--
   Created by IntelliJ IDEA.
   User: maxim
   Date: 31.10.2023
   Time: 23:53
   To change this template use File | Settings | File Templates.
 --%>
-<%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%@ page contentType="text/html;charset=UTF-8" %>
 
 <html>
 <head>
@@ -45,7 +44,7 @@
 
                 <button class="submitButton" type="submit">Ответить</button>
             </form>
-            <img src="${Level.pathToImage}"/>
+            <img src="${Level.pathToImage}" alt="Image"/>
         </div>
     </c:if>
 
@@ -55,7 +54,7 @@
         <form action="${pageContext.request.contextPath}/restart" method="get">
             <button class="restartButton" type="submit">Начать заново</button>
         </form>
-            <img src="${Level.pathToImage}"/>
+            <img src="${Level.pathToImage}" alt="Image"/>
         </div>
     </c:if>
 
