@@ -19,6 +19,7 @@ public class LevelQuestServlet extends HttpServlet {
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         HttpSession session = req.getSession();
         RequestDispatcher requestDispatcher = req.getRequestDispatcher("WEB-INF/Basic.jsp");
+
         String choice = req.getParameter("choice");
         if (StringUtils.isEmpty(choice)) {
             requestDispatcher.forward(req, resp);

@@ -27,7 +27,7 @@ public class LevelQuest {
         this.answerTwo = null;
     }
 
-    public void setDefeat() {
+    public void markAsDefeated() {
         isDefeat = true;
     }
 

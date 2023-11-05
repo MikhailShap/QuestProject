@@ -1,6 +1,5 @@
 package com.javarush.quest.shaposhnikov.Levels;
 
-import java.util.Formatter;
 
 public class LevelsQuestLoader {
     public final static LevelQuest MAIN_LEVEL;
@@ -71,19 +70,19 @@ public class LevelsQuestLoader {
         l2_1_2_1.addNextLevels(l2_1_2_1_1_End, l2_1_2_1_2_End);
 
         //set isDefeat
-        l1_1_2_End.setDefeat();
-        l2_2_2_End.setDefeat();
-        l1_1_1_1_End.setDefeat();
-        l1_2_1_2_End.setDefeat();
-        l1_2_2_2_End.setDefeat();
-        l2_1_1_2_End.setDefeat();
-        l2_1_2_2_End.setDefeat();
-        l2_2_1_1_End.setDefeat();
-        l2_2_1_2_End.setDefeat();
-        l1_2_1_1_1_End.setDefeat();
-        l1_2_2_1_1_End.setDefeat();
-        l2_1_1_1_1_End.setDefeat();
-        l2_1_2_1_1_End.setDefeat();
+        l1_1_2_End.markAsDefeated();
+        l2_2_2_End.markAsDefeated();
+        l1_1_1_1_End.markAsDefeated();
+        l1_2_1_2_End.markAsDefeated();
+        l1_2_2_2_End.markAsDefeated();
+        l2_1_1_2_End.markAsDefeated();
+        l2_1_2_2_End.markAsDefeated();
+        l2_2_1_1_End.markAsDefeated();
+        l2_2_1_2_End.markAsDefeated();
+        l1_2_1_1_1_End.markAsDefeated();
+        l1_2_2_1_1_End.markAsDefeated();
+        l2_1_1_1_1_End.markAsDefeated();
+        l2_1_2_1_1_End.markAsDefeated();
 
 
         //add Image "../images/.png"

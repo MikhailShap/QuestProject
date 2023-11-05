@@ -33,52 +33,50 @@ class InitServletTest {
     RequestDispatcher requestDispatcher;
 
     @BeforeEach
-    void setBehavior() {
-        //Устанавливаем нужные геттеры
+    void setUp() {
         when(request.getParameter("name")).thenReturn("TestName");
         when(request.getSession(true)).thenReturn(session);
         when(request.getRequestDispatcher("WEB-INF/Basic.jsp")).thenReturn(requestDispatcher);
 
     }
 
-    @Test
-    void correctAttributeNameSetInSession() throws ServletException, IOException {
-        //Этот геттер будет меняться
-        when(session.getAttribute("countGame")).thenReturn(2);
-        initServlet.doPost(request, response);
-
-        verify(session).setAttribute("name", "TestName");
-//        verify(session).setAttribute("countGame", 3);
-//        verify(requestDispatcher).forward(request, response);
-    }
 
     @Test
-    void correctSetAttributeCountGameInSessionFirst() throws ServletException, IOException {
+    void setAttributeCountGameInSessionFirst() throws ServletException, IOException {
         when(session.getAttribute("countGame")).thenReturn(null);
+
         initServlet.doPost(request, response);
 
         verify(session).setAttribute("countGame", 1);
     }
 
     @Test
-    void correctSetAttributeCountGameInSessionSecond() throws ServletException, IOException {
+    void incrementAttributeCountGameInSessionSecond() throws ServletException, IOException {
         when(session.getAttribute("countGame")).thenReturn(1);
+
         initServlet.doPost(request, response);
+
         verify(session).setAttribute("countGame", 2);
     }
 
     @Test
-    void forwardWhenCountGameNull() throws ServletException, IOException {
+    void forwardInBasicJspWhenCountGameNull() throws ServletException, IOException {
         when(session.getAttribute("countGame")).thenReturn(null);
-        initServlet.doPost(request,response);
-        verify(requestDispatcher).forward(request,response);
+
+        initServlet.doPost(request, response);
+
+        verify(request).getRequestDispatcher("WEB-INF/Basic.jsp");
+        verify(requestDispatcher).forward(request, response);
     }
 
     @Test
-    void forwardWhenCountGameNotNull() throws ServletException, IOException{
+    void forwardInBasicJspWhenCountGameNotNull() throws ServletException, IOException {
         when(session.getAttribute("countGame")).thenReturn(2);
-        initServlet.doPost(request,response);
-        verify(requestDispatcher).forward(request,response);
+
+        initServlet.doPost(request, response);
+
+        verify(request).getRequestDispatcher("WEB-INF/Basic.jsp");
+        verify(requestDispatcher).forward(request, response);
     }
 
 }
